@@ -36,7 +36,7 @@ spec:
         - containerPort: 80
         volumeMounts:
         - name: hostvol
-          mountPath: /code
+          mountPath: /var/www/html/
       volumes:
       - name: hostvol
         persistentVolumeClaim:
