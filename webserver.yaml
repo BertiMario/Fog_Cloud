@@ -46,10 +46,10 @@ spec:
         image: busybox
         volumeMounts:
         - name: hostvol
-          mountPath: /code
+          mountPath: /var/www/html/
         command:
         - wget
         - "-O"
-        - "/code/index.php"
+        - "/var/www/html/index.php"
         - https://raw.githubusercontent.com/BertiMario/Fog_Cloud/master/index.php
 
