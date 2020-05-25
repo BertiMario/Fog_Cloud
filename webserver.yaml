@@ -51,5 +51,5 @@ spec:
         - wget
         - "-O"
         - "/code/index.php"
-        - https://raw.githubusercontent.com/do-community/php-kubernetes/master/index.php
+        - https://raw.githubusercontent.com/BertiMario/Fog_Cloud/master/index.php
 
