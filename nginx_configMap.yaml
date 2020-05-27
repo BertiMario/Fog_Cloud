@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+ name: nginx-config
+
+data:
+ config : |
+  upstream alpine-ampache {
+     ip_hash;
+     server alpine-ampache;
+  }
+  server {
+   listen 80;
+
+   location / {
+            proxy_pass http://alpine-ampache;
+   }
+
+    }
