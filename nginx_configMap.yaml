@@ -15,5 +15,9 @@ data:
    location / {
             proxy_pass http://alpine-ampache;
    }
+   
+   location /upstream {
+            proxy_pass http://alpine-ampache;
+   }
 
     }
