@@ -29,7 +29,7 @@ spec:
         app: alpine-ampache
         tier: frontend
         track: stable
-        run: alpine-ampache
+        run: frontend-server
     spec:
       volumes:
       - name: config
