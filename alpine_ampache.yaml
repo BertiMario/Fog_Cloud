@@ -29,6 +29,7 @@ spec:
       labels:
         app: alpine-ampache
         tier: backend
+        run: alpine-ampache
     spec:
       containers:
       - name: php-alpine
