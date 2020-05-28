@@ -43,7 +43,7 @@ spec:
         image: nginx:1.7.9 
         ports:
         - containerPort: 80
-          hostPort: 8086  #to remove after debugging
+          #hostPort: 8086  #to remove after debugging
         volumeMounts:
         - name: config
           mountPath: /etc/nginx/conf.d
